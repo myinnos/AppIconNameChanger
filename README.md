@@ -27,8 +27,61 @@ And then in the other gradle file(may be your app gradle or your own module libr
 
 How to use
 -----
-**Step 1:** update soon ...:
+**Step 1:** set activity alias in manifest file : [#Example](https://github.com/myinnos/AppIconNameChanger/blob/master/app/src/main/AndroidManifest.xml "Example")
+```
+<application
+         .........
+        
+       <!-- main activity-->
+       <activity android:name=".MainActivity" />
 
+        <!-- setting activity-alias names-->
+        <activity-alias
+            android:name="in.myinnos.changeappiconandname.MainActivity-settings"
+            android:enabled="true"  //enabled by default launcher
+            android:icon="@drawable/ic_settings"  //app icon
+            android:label="@string/app_settings"  //app label/name
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name="in.myinnos.changeappiconandname.MainActivity-camera"
+            android:enabled="false"
+            android:icon="@drawable/ic_camera"  //app icon
+            android:label="@string/app_camera" //app label/name
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        .........
+
+</application>
+```
+**Step 2:** implement App Icon Name Changer method : [#Example](https://github.com/myinnos/AppIconNameChanger/blob/master/app/src/main/java/in/myinnos/changeappiconandname/MainActivity.java "Example")
+```
+// Active alias name
+String activeName = "in.myinnos.changeappiconandname.MainActivity-settings";
+
+// Disable alias names
+List<String> disableNames = new ArrayList<String>();
+disableNames.add("in.myinnos.changeappiconandname.MainActivity-camera");
+
+// Initiate App Icon Name Changer
+new AppIconNameChanger.Builder(MainActivity.this)
+                .activeName(activeName) // String
+                .disableNames(disableNames) // List<String>
+                .packageName(BuildConfig.APPLICATION_ID)
+                .build()
+                .setNow();
+```
+**IMP Note:** To change application launcher icon and the application name should wait for 10 Seconds(MAX) to refresh the launcher.
 ##### Any Queries? or Feedback, please let me know by opening a [new issue](https://github.com/myinnos/AppIconNameChanger/issues/new)!
 
 ## Contact
