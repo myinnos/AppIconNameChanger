@@ -1,5 +1,5 @@
 # AppIconNameChanger
-Change Android App Icon and App Name programmatically !
+Change Android App launcher Icon and App Name programmatically !
 
  ![AppIconNameChanger - Example1](https://s19.postimg.org/pr1esh99f/App_Icon_Name_Changer_example_01.png)
  `` `` `` `` `` `` `` ``
