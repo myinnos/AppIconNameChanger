@@ -6,7 +6,8 @@ Change Android App launcher Icon and App Name programmatically !
  ![AppIconNameChanger - Example2](https://s19.postimg.org/hmtanqmub/App_Icon_Name_Changer_example_02.png)
  `` `` `` `` `` `` `` ``
  ![AppIconNameChanger - Example3](https://s19.postimg.org/nc9j81t0j/App_Icon_Name_Changer_example_03.png)
-  
+
+#### Download Test APK from [HERE](https://github.com/myinnos/AppIconNameChanger/blob/master/apk/appIconNameChanger.apk "APK")
   
 #### Kindly use the following links to use this library:
 
