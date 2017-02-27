@@ -87,9 +87,10 @@ new AppIconNameChanger.Builder(MainActivity.this)
 
 ## Contact
 #### Prabhakar Thota
-* Website: [myinnos.in](http://www.myinnos.in "Prabhakar Thota")
-* e-mail: contact@myinnos.in
-* Twitter: [@myinnos](https://twitter.com/myinnos "Prabhakar Thota on twitter")         
+* :globe_with_meridians: Website: [myinnos.in](http://www.myinnos.in "Prabhakar Thota")
+* :email: e-mail: contact@myinnos.in
+* :mag_right: LinkedIn: [PrabhakarThota](https://www.linkedin.com/in/prabhakarthota "Prabhakar Thota on LinkedIn")
+* :thumbsup: Twitter: [@myinnos](https://twitter.com/myinnos "Prabhakar Thota on twitter")   
 
 License
 -------
