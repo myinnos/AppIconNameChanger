@@ -12,24 +12,24 @@ Change Android App launcher Icon and App Name programmatically !
 #### Kindly use the following links to use this library:
 
 In build.gradle (Project)
-
-	allprojects {
-		repositories {
-			...
-			maven { url "https://jitpack.io" }
-		}
+```java
+allprojects {
+	repositories {
+	...
+	maven { url "https://jitpack.io" }
 	}
-	
+}
+```
 And then in the other gradle file(may be your app gradle or your own module library gradle, but never add in both of them to avoid conflict.)
-	
-	 dependencies {
-	        compile 'com.github.myinnos:AppIconNameChanger:1.0'
-	        }
-
+```java	
+dependencies {
+	compile 'com.github.myinnos:AppIconNameChanger:1.0'
+}
+```
 How to use
 -----
 **Step 1:** set activity alias in manifest file : [#Example](https://github.com/myinnos/AppIconNameChanger/blob/master/app/src/main/AndroidManifest.xml "Example")
-```
+```xml
 <application
          .........
         
@@ -66,13 +66,14 @@ How to use
 </application>
 ```
 **Step 2:** implement App Icon Name Changer method : [#Example](https://github.com/myinnos/AppIconNameChanger/blob/master/app/src/main/java/in/myinnos/changeappiconandname/MainActivity.java "Example")
-```
+```java
 // Active alias name
 String activeName = "in.myinnos.changeappiconandname.MainActivity-settings";
 
 // Disable alias names
 List<String> disableNames = new ArrayList<String>();
 disableNames.add("in.myinnos.changeappiconandname.MainActivity-camera");
+disableNames.add("in.myinnos.changeappiconandname.MainActivity-message");
 
 // Initiate App Icon Name Changer
 new AppIconNameChanger.Builder(MainActivity.this)
