@@ -9,5 +9,5 @@
     <string name="text_camera">Change to Camera</string>
     <string name="text_settings">Change to Settings</string>
     <string name="text_message">Change to Message</string>
-    <string name="message">This Demo will help you to change application launcher icon and the application name.   After Clicking on App name(Button) wait for 10 Seconds(MAX) to refresh the launcher.</string>
+    <string name="message">This Demo will help you to change the application launcher icon and the application name. After Clicking on App name(Button) wait for 10 Seconds(MAX) to refresh the launcher.</string>
 </resources>
