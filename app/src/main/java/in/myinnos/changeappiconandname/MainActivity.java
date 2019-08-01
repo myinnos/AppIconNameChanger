@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                activeName = "in.myinnos.changeappiconandname.MainActivity-settings";
-                disableNames.add("in.myinnos.changeappiconandname.MainActivity-message");
-                disableNames.add("in.myinnos.changeappiconandname.MainActivity-camera");
+                activeName = "in.myinnos.changeappiconandname.MainActivitySettings";
+                disableNames.add("in.myinnos.changeappiconandname.MainActivityMessage");
+                disableNames.add("in.myinnos.changeappiconandname.MainActivityCamera");
                 setAppIcon(activeName, disableNames);
             }
         });
@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
         btMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activeName = "in.myinnos.changeappiconandname.MainActivity-message";
-                disableNames.add("in.myinnos.changeappiconandname.MainActivity-camera");
-                disableNames.add("in.myinnos.changeappiconandname.MainActivity-settings");
+                activeName = "in.myinnos.changeappiconandname.MainActivityMessage";
+                disableNames.add("in.myinnos.changeappiconandname.MainActivityCamera");
+                disableNames.add("in.myinnos.changeappiconandname.MainActivitySettings");
                 setAppIcon(activeName, disableNames);
             }
         });
@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
         btCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activeName = "in.myinnos.changeappiconandname.MainActivity-camera";
-                disableNames.add("in.myinnos.changeappiconandname.MainActivity-message");
-                disableNames.add("in.myinnos.changeappiconandname.MainActivity-settings");
+                activeName = "in.myinnos.changeappiconandname.MainActivityCamera";
+                disableNames.add("in.myinnos.changeappiconandname.MainActivityMessage");
+                disableNames.add("in.myinnos.changeappiconandname.MainActivitySettings");
                 setAppIcon(activeName, disableNames);
             }
         });

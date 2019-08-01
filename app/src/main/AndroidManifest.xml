@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="in.myinnos.changeappiconandname">
 
     <application
@@ -7,13 +8,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".MainActivity" />
 
         <!-- setting activity-alias names-->
         <activity-alias
-            android:name="in.myinnos.changeappiconandname.MainActivity-settings"
+            android:name="in.myinnos.changeappiconandname.MainActivitySettings"
             android:enabled="true"
             android:icon="@drawable/ic_settings"
             android:label="@string/app_settings"
@@ -26,7 +28,7 @@
         </activity-alias>
 
         <activity-alias
-            android:name="in.myinnos.changeappiconandname.MainActivity-camera"
+            android:name="in.myinnos.changeappiconandname.MainActivityCamera"
             android:enabled="false"
             android:icon="@drawable/ic_camera"
             android:label="@string/app_camera"
@@ -39,7 +41,7 @@
         </activity-alias>
 
         <activity-alias
-            android:name="in.myinnos.changeappiconandname.MainActivity-message"
+            android:name="in.myinnos.changeappiconandname.MainActivityMessage"
             android:enabled="false"
             android:icon="@drawable/ic_message"
             android:label="@string/app_message"
