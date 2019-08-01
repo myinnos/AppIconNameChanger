@@ -23,7 +23,7 @@ allprojects {
 And then in the other gradle file(may be your app gradle or your own module library gradle, but never add in both of them to avoid conflict.)
 ```java	
 dependencies {
-	compile 'com.github.myinnos:AppIconNameChanger:1.0'
+	compile 'com.github.myinnos:AppIconNameChanger:1.0.7'
 }
 ```
 How to use
@@ -38,7 +38,7 @@ How to use
 
         <!-- setting activity-alias names-->
         <activity-alias
-            android:name="in.myinnos.changeappiconandname.MainActivity-settings"
+            android:name="in.myinnos.changeappiconandname.MainActivitySettings"
             android:enabled="true"  //enabled by default launcher
             android:icon="@drawable/ic_settings"  //app icon
             android:label="@string/app_settings"  //app label/name
@@ -50,7 +50,7 @@ How to use
         </activity-alias>
 
         <activity-alias
-            android:name="in.myinnos.changeappiconandname.MainActivity-camera"
+            android:name="in.myinnos.changeappiconandname.MainActivityCamera"
             android:enabled="false"
             android:icon="@drawable/ic_camera"  //app icon
             android:label="@string/app_camera" //app label/name
@@ -68,12 +68,12 @@ How to use
 **Step 2:** implement App Icon Name Changer method : [#Example](https://github.com/myinnos/AppIconNameChanger/blob/master/app/src/main/java/in/myinnos/changeappiconandname/MainActivity.java "Example")
 ```java
 // Active alias name
-String activeName = "in.myinnos.changeappiconandname.MainActivity-settings";
+String activeName = "in.myinnos.changeappiconandname.MainActivitySettings";
 
 // Disable alias names
 List<String> disableNames = new ArrayList<String>();
-disableNames.add("in.myinnos.changeappiconandname.MainActivity-camera");
-disableNames.add("in.myinnos.changeappiconandname.MainActivity-message");
+disableNames.add("in.myinnos.changeappiconandname.MainActivityCamera");
+disableNames.add("in.myinnos.changeappiconandname.MainActivityMessage");
 
 // Initiate App Icon Name Changer
 new AppIconNameChanger.Builder(MainActivity.this)
@@ -91,12 +91,13 @@ new AppIconNameChanger.Builder(MainActivity.this)
 * :globe_with_meridians: Website: [myinnos.in](http://www.myinnos.in "Prabhakar Thota")
 * :email: e-mail: contact@myinnos.in
 * :mag_right: LinkedIn: [PrabhakarThota](https://www.linkedin.com/in/prabhakarthota "Prabhakar Thota on LinkedIn")
-* :thumbsup: Twitter: [@myinnos](https://twitter.com/myinnos "Prabhakar Thota on twitter")   
+* :thumbsup: Twitter: [@myinnos](https://twitter.com/myinnos "Prabhakar Thota on Twitter")   
+* :camera: Instagram: [@prabhakar_t_](https://www.instagram.com/prabhakar_t_/ "Prabhakar Thota on Instagram")   
 
 License
 -------
 
-    Copyright 2017 MyInnos
+    Copyright 2019 MyInnos
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
