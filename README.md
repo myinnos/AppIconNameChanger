@@ -94,6 +94,8 @@ new AppIconNameChanger.Builder(MainActivity.this)
 * :thumbsup: Twitter: [@myinnos](https://twitter.com/myinnos "Prabhakar Thota on Twitter")   
 * :camera: Instagram: [@prabhakar_t_](https://www.instagram.com/prabhakar_t_/ "Prabhakar Thota on Instagram")   
 
+> If you appreciate my work, consider buying me a cup of :coffee: to keep me recharged :metal: by [PayPal](https://www.paypal.me/fansfolio)
+
 License
 -------
 
